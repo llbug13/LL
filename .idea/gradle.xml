@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/greemdao" />
             <option value="$PROJECT_DIR$/mvp" />
             <option value="$PROJECT_DIR$/rxandroid" />
+            <option value="$PROJECT_DIR$/service" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
