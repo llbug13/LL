@@ -5,7 +5,12 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Binder;
 import android.os.IBinder;
+import android.os.RemoteException;
 import android.util.Log;
+import android.view.View;
+import android.widget.LinearLayout;
+
+import com.example.service.aidl.IMyAidlInterface;
 
 /**
  * Created by LL on 2017/2/11.
@@ -69,5 +74,19 @@ public class ServiceTest extends Service {
             String pp = p;
             return ServiceTest.this;
         }
+    }
+
+    class MyBinder extends IMyAidlInterface.Stub{
+//        mCameraService = ICameraData.Stub.asInterface(service);
+
+        @Override
+        public void basicTypes(int anInt, long aLong, boolean aBoolean, float aFloat, double aDouble, String aString) throws RemoteException {
+            System.out.println("get data from client:" + anInt + " " + aLong);
+        }
+
+//        @Override
+//        public void sendObj(Student student) throws RemoteException {
+//            System.out.println("xixixixiixiixi");
+//        }
     }
 }

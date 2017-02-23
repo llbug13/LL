@@ -15,9 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".service.ServiceTest"
-            />
-        <!--android:process="com.rabbit.run"-->
+        <service android:name=".service.ServiceTest"/>
+        android:process="com.rabbit.run"
     </application>
 
 </manifest>

@@ -7,7 +7,7 @@
         <!--android:label="@string/app_name"-->
         <!--android:theme="@style/AppTheme"-->
         <!--android:supportsRtl="true">-->
-        <!--<activity android:name=".NoteActivity">-->
+        <!--<activity android:name=".sqlite.SqliteTestAcitvity">-->
             <!--<intent-filter>-->
                 <!--<action android:name="android.intent.action.MAIN" />-->
 
